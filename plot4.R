@@ -1,6 +1,6 @@
 #read the file
 file <- "household_power_consumption.txt"
-houseData <- read.table(file, sep=";",  na.string="?", header=TRUE)
+houseData <- read.table(file, sep=";", na.string="?", header=TRUE)
 
 #change to date class
 houseData$Date <- as.Date(houseData$Date, format="%d/%m/%Y")
